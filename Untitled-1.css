@@ -1,0 +1,25 @@
+ body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    color: chocolate;
+    text-shadow: 3px 5px 3px coral;
+    text-align: center;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-column-gap: 1em;
+    font-size: 20px;
+
+}
+
+.grid > div{
+    text-align: justify;
+    padding: 1em;
+    background-color: burlywood;
+}
