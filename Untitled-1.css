@@ -1,43 +1,43 @@
+ 
  body {
     background-color: whitesmoke;
 }
 
-h1 {font-family: 'Courier New', cursive, sans-serif;
+h1 {     
+
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
     color: white;
-    color: rgb(77, 77, 77);
+    color: #f9aa33;
     text-align: center;
 }
 
+.box1 { grid-area: header; 
+background-color: black;
+}
+.box2 { grid-area: menuu; 
+
+    background-color: rgb(134, 25, 25);}
+.box3 { grid-area: main; 
+
+    background-color: rgb(124, 86, 168);}
+.box4 { grid-area: footer; }
 
 .grid {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menuu main main main main main'
+      'menuu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color:  #344955 ;
+    padding: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    display: grid;
-   /* grid-template-columns:2fr 3fr ;*/
-    grid-auto-rows: minmax(100px,auto);
-
-    /*grid-row-gap: 1em; */
-    font-size: 20px;
-    box-shadow: 3px 6px 15px  rgb(225, 228, 225);
-
-}
-
-.grid > div{
-    margin: 15px;
-    text-align: justify;
-    padding: 1em;/*
-    background-color: rgb(189, 245, 181);*/
-}
-/*
-.grid > div:nth-child(){
-    background-color: rgb(94, 88, 88);
-
-}*/
-.box1{
-    grid-column: 1/4;
-    grid-row: 1/4;
-    background-color: rgb(171, 236, 236)
-}
-.box3{align-self:flex-start;
-    background-color: black
-}
+  }
+  .grid > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    margin: 10px;
+  }
