@@ -1,0 +1,5 @@
+.grid{
+    background-color: whitesmoke;
+    grid-auto-rows: 500px;
+    grid-gap: 4px
+}
