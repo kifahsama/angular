@@ -12,4 +12,10 @@ h1 {
     text-align: center;
 }
 
+.mylist{
+list-style-type: none;
+}
+.mybg{
+    background-color:rgba(250, 250, 250, 0.637);
+}
 
